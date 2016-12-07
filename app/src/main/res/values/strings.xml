@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Universal Translator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_card">CardActivity</string>
+    <string name="title_activity_translation">TranslationActivity</string>
+    <string name="translation_records">Translation Records</string>
+    <string name="app_title">Universal Translator</string>
+    <string name="universal_translator">Universal Translator</string>
+    <string name="secure_transmission">Secure Transmission</string>
+    <string name="secure_direct_line">Secure Direct Line</string>
+    <string name="translations_db">Translations DB</string>
+    <string name="select_language">Select Language:</string>
+    <string name="send_transmission">Send Transmission</string>
+    <string name="your_translation_will_appear_here">Your Translation Will Appear Here.</string>
+    <string name="please_enter_text_to_be_translated">Please enter text to be translated</string>
+    <string name="language">Language:</string>
+    <string name="message">Message:</string>
+    <string name="translation">Translation:</string>
+</resources>

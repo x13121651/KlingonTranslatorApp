@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_translation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.ronanlafford.klingontranslatorapp.TranslationActivity"
+    tools:showIn="@layout/activity_translation">
+
+    <TextView
+
+        android:text="@string/select_language"
+        android:layout_width="0dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:typeface="normal"
+        android:textColor="@android:color/darker_gray"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="28dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp" />
+
+    <Button
+        android:text="@string/send_transmission"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:background="@drawable/button_rounded"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/floatingActionButton3" />
+
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:hint="@string/your_translation_will_appear_here"
+        android:textAlignment="viewStart"
+        android:typeface="normal"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp" />
+
+
+    <EditText
+
+        android:layout_width="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="@string/please_enter_text_to_be_translated"
+        android:layout_height="75dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textColorHint="@android:color/darker_gray"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginTop="96dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView" />
+
+    <Spinner
+        style="@style/Spinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:id="@+id/spinner"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dialog"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        android:id="@+id/floatingActionButton2"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintRight_toLeftOf="@+id/textView3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        android:id="@+id/floatingActionButton3"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@android:color/white"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView3" />
+
+</android.support.constraint.ConstraintLayout>
